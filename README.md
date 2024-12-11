@@ -10,4 +10,4 @@ learning some syntax and algorithm beside lua
 - C++ Data Structures and Algorithm Design Principles: Leverage the power of modern C++ to build robust and scalable applications (Author : John Carey, Shreyans Doshi, Payas Rajan) 
 
 ## Side Projects
-OOP Practice / OPENGL Basics / High School Level Calculus Calculator
+Scrapped Digital Circuit / OOP Practice / OPENGL Basics / High School Level Physics Calculator
