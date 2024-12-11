@@ -17,10 +17,16 @@ t maximum(t a, t b)
     return (a > b) ? a : b;
 }
 
-// Template specialization?
+/* Template specialization
+Why use Template Specialization? Because
+you can do special operation on certain data types, such as if its a 
+boolean then, you can operate boolean operations.
+
+in short, you can do different operation on certain parameter.
+*/
 template <>
 const char* maximum<const char*> (const char* a, const char* b);
-
+// specialized on const char pointer.
 
 // Functions
 int addition(int a, int b) // << difference : fixed param
