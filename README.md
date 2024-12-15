@@ -2,7 +2,8 @@
 This Repositery is mainly for record studying Programming languages and Projects that is scrapped, made for fun during 2024;
 
 ## Cpp Syntax
-learning some syntax and algorithm beside lua
+Learning Modern C++!
+Version - C++20 (including new Templagtes and Range Based Loop statements, Classes, Inheritance, Polymorphism)
 
 ## Algorithm and Data Structurers
 2 Sources refered 
