@@ -68,6 +68,24 @@ TypeTwo Increment(TypeTwo A)
     return A;
 }
 
+template <typename Requires_Clauses>
+concept Requirement_Trait = requires (Requires_Clauses Variable_One)
+{
+    sizeof(Variable_One) <=4; // simple requirement : only checks syntax
+    requires sizeof(Requires_Clauses) <= 4; // additional/nested requirement. : Check if statement is true;
+}; 
+
+template <typename Requirement_Clauses>
+concept Compound_Addable = requires (Requirement_Clauses A, Requirement_Clauses B)
+{
+    {A+B} noexcept -> std::convertible_to<int>; // checks if a + b is valid syntax, doesnt throw expetions, and the
+    // result is convertible to int
+};
+
+// NOTE 
+// Always call Template first whenever call concept/require.
+// to build concept, use concept keyword
+// to use concept, use require keyword.
 
 int main()
 {
